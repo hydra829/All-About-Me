@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-hj-TYP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-hj-TYP">
                                         <rect key="frame" x="56" y="67" width="271" height="533"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="george" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-lc-x7F">
@@ -58,6 +58,12 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UGk-4f-e6v" secondAttribute="trailing" id="QZh-L5-U1d"/>
+                                            <constraint firstAttribute="bottom" secondItem="UGk-4f-e6v" secondAttribute="bottom" id="TAw-gV-7dz"/>
+                                            <constraint firstItem="UGk-4f-e6v" firstAttribute="leading" secondItem="ewP-hj-TYP" secondAttribute="leading" id="g7r-au-Tfv"/>
+                                            <constraint firstItem="UGk-4f-e6v" firstAttribute="top" secondItem="iNv-lc-x7F" secondAttribute="bottom" id="nsw-ck-DbG"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
