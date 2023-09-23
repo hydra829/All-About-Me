@@ -16,19 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-1d-HQ6" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-1d-HQ6" userLabel="Main Stack View">
+                                <rect key="frame" x="16" y="75" width="393" height="727"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-hj-TYP">
-                                        <rect key="frame" x="56" y="67" width="271" height="533"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" fixedFrame="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-hj-TYP">
+                                        <rect key="frame" x="106" y="178" width="271" height="533"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="george" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-lc-x7F">
                                                 <rect key="frame" x="0.0" y="0.0" width="271" height="350"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UGk-4f-e6v">
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UGk-4f-e6v">
                                                 <rect key="frame" x="91.666666666666657" y="380" width="87.666666666666657" height="153"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-nP-5kl">
@@ -40,7 +39,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3A-1g-Ryn">
-                                                        <rect key="frame" x="0.0" y="59.333333333333314" width="87.666666666666671" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="59.333333333333371" width="87.666666666666671" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Hobbies">
                                                             <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
@@ -48,7 +47,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-W9-qkg">
-                                                        <rect key="frame" x="0.0" y="118.66666666666667" width="87.666666666666671" height="34.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="118.66666666666661" width="87.666666666666671" height="34.333333333333329"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Goals">
                                                             <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
@@ -59,10 +58,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="UGk-4f-e6v" secondAttribute="trailing" id="QZh-L5-U1d"/>
-                                            <constraint firstAttribute="bottom" secondItem="UGk-4f-e6v" secondAttribute="bottom" id="TAw-gV-7dz"/>
-                                            <constraint firstItem="UGk-4f-e6v" firstAttribute="leading" secondItem="ewP-hj-TYP" secondAttribute="leading" id="g7r-au-Tfv"/>
-                                            <constraint firstItem="UGk-4f-e6v" firstAttribute="top" secondItem="iNv-lc-x7F" secondAttribute="bottom" id="nsw-ck-DbG"/>
+                                            <constraint firstItem="UGk-4f-e6v" firstAttribute="top" secondItem="iNv-lc-x7F" secondAttribute="bottom" constant="8" id="1AY-JQ-TGH"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -72,6 +68,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dJR-1d-HQ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="h5V-1v-8kI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dJR-1d-HQ6" secondAttribute="bottom" constant="16" id="hEQ-78-b7D"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
