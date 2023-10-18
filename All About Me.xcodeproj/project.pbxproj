@@ -14,6 +14,7 @@
 		609131722ABD1E13001B240A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609131712ABD1E13001B240A /* Assets.xcassets */; };
 		609131752ABD1E13001B240A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609131732ABD1E13001B240A /* LaunchScreen.storyboard */; };
 		60E253422ADF26F200BAF9EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E253412ADF26F200BAF9EE /* DetailViewController.swift */; };
+		60E253442ADF6D8F00BAF9EE /* Dinosaur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E253432ADF6D8F00BAF9EE /* Dinosaur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		609131742ABD1E13001B240A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		609131762ABD1E13001B240A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60E253412ADF26F200BAF9EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		60E253432ADF6D8F00BAF9EE /* Dinosaur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinosaur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				609131682ABD1E0F001B240A /* AppDelegate.swift */,
 				6091316A2ABD1E0F001B240A /* SceneDelegate.swift */,
 				6091316C2ABD1E0F001B240A /* ViewController.swift */,
+				60E253432ADF6D8F00BAF9EE /* Dinosaur.swift */,
 				6091316E2ABD1E0F001B240A /* Main.storyboard */,
 				60E253412ADF26F200BAF9EE /* DetailViewController.swift */,
 				609131712ABD1E13001B240A /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				6091316D2ABD1E0F001B240A /* ViewController.swift in Sources */,
 				609131692ABD1E0F001B240A /* AppDelegate.swift in Sources */,
+				60E253442ADF6D8F00BAF9EE /* Dinosaur.swift in Sources */,
 				6091316B2ABD1E0F001B240A /* SceneDelegate.swift in Sources */,
 				60E253422ADF26F200BAF9EE /* DetailViewController.swift in Sources */,
 			);
